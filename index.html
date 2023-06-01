@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Four</title>
+
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <h1>Vehicle Inventory Log</h1>
+
+    <form id="vehicleForm">
+      <label for="vehicleType">Vehicle Type:</label>
+      <select id="vehicleType" name="vehicleType">
+        <option value="car">Car</option>
+        <option value="motorcycle">Motorcycle</option>
+        <option value="truck">Truck</option>
+        <option value="pickuptruck">PickUp Truck</option>
+      </select><br><br>
+  
+      <label for="make">Make:</label>
+      <input type="text" id="make" name="make"><br><br>
+  
+      <label for="model">Model:</label>
+      <input type="text" id="model" name="model"><br><br>
+  
+      <label for="registrationNumber">Registration Number:</label>
+      <input type="text" id="registrationNumber" name="registrationNumber"><br><br>
+  
+      <label for="condition">Condition:</label>
+      <select id="condition" name="condition">
+        <option value="new">New</option>
+        <option value="preowend">Pre-Owned</option>
+        <option value="damaged">Damaged</option>
+        <option value="scrap">Scrap Parts</option>
+      </select><br><br>
+  
+      <button type="button" onclick="logVehicle()">Log Vehicle</button>
+    </form>  
+
+    <script src="js/index.js"></script>
+</body>
+</html>
